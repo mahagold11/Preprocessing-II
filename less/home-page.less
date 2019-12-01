@@ -1,5 +1,14 @@
 .home {
 
+  .hero-section {
+    border-bottom: @border;
+
+    .hero-copy {
+      margin: 20px 0 20px 0;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +65,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .button-mixin(1.8rem,white,teal);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
     }
   }
 }// home

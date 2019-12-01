@@ -1,1 +1,17 @@
 // Mixins in here
+
+.container () {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+// Parametric Mixin for Buttons
+
+.button-mixin (@font-size,@font-color,@background-color) {
+    font-size: @font-size;
+    color: @font-color;
+    background-color: @background-color;
+
+}
