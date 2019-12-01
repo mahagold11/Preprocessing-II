@@ -7,16 +7,38 @@
     margin-top: 10px;
     border-bottom: @border;
 
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .header-logo {
+
+        @media @mobile {
+            text-align: center;
+        }
+    }
+
     .header-nav{
         width: 40%;
         display: flex;
         justify-content: space-around;
         margin-top: 15px;
+
+        @media @mobile {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+
         
         nav {
             display: flex;
             justify-content: space-between;
             width: 100%;
+
 
             .nav-link{
    
